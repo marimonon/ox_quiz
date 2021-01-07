@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.main {
+  font-size: 20px;
+  width: 90vw;
+  max-width: 1000px;
+  border: 5px solid #dddddd;
+  margin: 40px auto 0;
+}
+
+.main .title {
+  font-size: 34px;
+  text-align: center;
+}
+
+.main #quiz {
+  width: 100%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.main #quiz::before {
+  position: absolute;
+  display: inline-block;
+  content: 'Q';
+  color: #ffffff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #d9d9d9;
+  left: -30px;
+  top: 8px;
+  line-height: 20px;
+}
+
+.main .answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .button {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  border: none;
+}
+
+.main .button:hover {
+  opacity: 60%;
+}
+
+.main .button:active {
+  opacity: 20%;
+}
+
+.main #o {
+  position: relative;
+  background-color: pink;
+}
+
+.main #o::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 5px solid #ff0000;
+  border-radius: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+.main #x {
+  position: relative;
+  background-color: lightblue;
+}
+
+.main #x::before, .main #x::after {
+  content: "";
+  display: block;
+  width: 100px;
+  /*バツ線の長さ*/
+  height: 5px;
+  /*バツ線の太さ*/
+  background: #0000ff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  position: absolute;
+  top: calc(14% - 5px);
+  left: 14%;
+}
+
+.main #x::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  left: auto;
+  right: 14%;
+}
+
+.main #comment {
+  display: none;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.main #seikai {
+  display: none;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 30px;
+}
+
+.main #matigai {
+  display: none;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #0000ff;
+  border-radius: 30px;
+}
+
+.main .next__button {
+  text-align: center;
+}
+
+.main #next {
+  font-size: 14px;
+  border: 1px solid #000;
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main #next:hover {
+  background-color: lemonchiffon;
+  color: brown;
+  border-color: brown;
+}
+
+.main #next:active {
+  color: brown;
+  background-color: brown;
+}
+
+.main #finish-panel {
+  text-align: center;
+}
+
+.main #start-button {
+  font-size: 14px;
+  border: 1px solid #000;
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main #start-button:hover {
+  background-color: lemonchiffon;
+  color: brown;
+  border-color: brown;
+}
+
+.main #start-button:active {
+  color: brown;
+  background-color: brown;
+}
+
+.main .click__none {
+  pointer-events: none;
+}
+
+.main .hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
